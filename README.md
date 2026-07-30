@@ -1,8 +1,8 @@
-# voximity-legal
+# voxtown-legal
 
-Public legal pages for [Voximity](https://github.com/seanwho88/Retry).
+Public legal pages for [voxtown](https://github.com/seanwho88/retry) (formerly Voximity, renamed 2026-07-15).
 
-Published via GitHub Pages at: https://seanwho88.github.io/voximity-legal/
+Published via GitHub Pages at: https://seanwho88.github.io/voxtown-legal/
 
 - `index.html` — privacy policy (linked from Play Store listing)
 

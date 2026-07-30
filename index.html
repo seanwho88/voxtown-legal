@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Voximity</title>
+  <title>Privacy Policy — voxtown</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -91,15 +91,15 @@
 
     <header>
       <h1>Privacy Policy</h1>
-      <p>Voximity &mdash; Last updated: 2026-05-05</p>
+      <p>voxtown &mdash; Last updated: 2026-07-15</p>
     </header>
 
     <section>
       <h2>Overview</h2>
       <p>
-        Voximity is a music-discovery app that shows you what people nearby are listening to right now.
-        We built it with a privacy-first mindset: listening data expires automatically, location is
-        approximate and opt-in, and you control what you share.
+        voxtown is a music-discovery app that shows you what people are listening to right now.
+        We built it with a privacy-first mindset: listening data expires automatically and you control what you share.
+        voxtown does not request or store end-user device location.
       </p>
       <p>
         This policy explains what data we collect, why we collect it, how long we keep it, and what
@@ -145,11 +145,6 @@
         <li>Aggregate counters only (e.g. "played 10 jazz tracks total"). We do <em>not</em> store the individual songs that contributed to a badge, and we do <em>not</em> store badge evidence sequences.</li>
       </ul>
 
-      <p><strong>Approximate location</strong></p>
-      <ul>
-        <li>If you opt in to the proximity feed, we store a low-precision geohash (roughly 1&ndash;5 km radius) to match you with nearby listeners. We never store precise GPS coordinates.</li>
-      </ul>
-
       <p><strong>Device &amp; diagnostics</strong></p>
       <ul>
         <li>Crash reports and anonymised usage events (screen views, feature interactions) via standard mobile analytics. These contain no personally identifying information.</li>
@@ -160,7 +155,7 @@
       <h2>2. What We Do NOT Collect</h2>
       <ul>
         <li>Your Spotify or Last.fm password</li>
-        <li>Precise GPS coordinates</li>
+        <li>Device location of any kind (GPS, network, or geohash)</li>
         <li>Listening history beyond the 48-hour rolling window</li>
         <li>The individual songs used to unlock a badge (only the final counter is stored)</li>
         <li>Your real name, phone number, or email address (unless you contact us directly)</li>
@@ -172,10 +167,10 @@
     <section>
       <h2>3. How We Use Your Data</h2>
       <ul>
-        <li><strong>Live feed</strong>: Your current track (if shared) is displayed to other users in your approximate vicinity.</li>
+        <li><strong>Live feed</strong>: Your current track (if shared) is displayed to other voxtown users.</li>
         <li><strong>Badge system</strong>: Aggregate counters are used to award story badges and surface personalised milestones.</li>
         <li><strong>Connections</strong>: Connection requests are triggered by shared listening moments and routed between the two users involved.</li>
-        <li><strong>Business map</strong>: Aggregate (non-identifying) listening activity at opted-in venues may be displayed on a map view.</li>
+        <li><strong>Business map</strong>: Registered venues and their current track may be displayed on a map view. Venues enter their own address; we do not use your device location.</li>
         <li><strong>Service improvement</strong>: Anonymised crash data and usage analytics help us fix bugs and prioritise features.</li>
       </ul>
       <p>We do not sell your data. We do not use your listening data for advertising profiling.</p>
@@ -196,15 +191,24 @@
       <p>
         If you connect a Last.fm account, we periodically query the Last.fm API for your recent
         scrobbles. <em>Note: commercial use of the Last.fm API is subject to Audioscrobbler
-        commercial approval, which is pending for Voximity.</em> See
+        commercial approval, which is pending for voxtown.</em> See
         <a href="https://www.last.fm/legal/privacy" target="_blank" rel="noopener">Last.fm's Privacy Policy</a>.
       </p>
 
       <p><strong>Firebase / Google</strong></p>
       <p>
         We use Firebase Authentication and Firestore for user accounts and real-time data sync.
-        Google may process data in accordance with their
+        You can sign in with Google, in which case Google may share your email address and
+        display name with us. Google may process data in accordance with their
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+      </p>
+
+      <p><strong>Apple (Sign in with Apple)</strong></p>
+      <p>
+        You can also sign in with Apple. When you do, Apple may share your name and either
+        your real email address or a private relay email (your choice at sign-in time) with us.
+        We treat the relay address the same as a normal email and never attempt to deanonymise
+        it. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.
       </p>
 
       <p><strong>Crash &amp; analytics</strong></p>
@@ -231,7 +235,6 @@
       <ul>
         <li><strong>Access</strong> the personal data we hold about you</li>
         <li><strong>Delete</strong> your account and all associated data (in-app: Settings &rarr; Delete Account)</li>
-        <li><strong>Opt out</strong> of the proximity feed at any time without deleting your account</li>
         <li><strong>Disconnect</strong> Spotify or Last.fm, which revokes our access to future data from those services</li>
         <li><strong>Request a copy</strong> of your data by emailing <a href="mailto:seanwho88@gmail.com">seanwho88@gmail.com</a></li>
       </ul>
@@ -259,7 +262,7 @@
     <section>
       <h2>8. Children</h2>
       <p>
-        Voximity is not directed at children under 13 (or under 16 in the EU). We do not
+        voxtown is not directed at children under 13 (or under 16 in the EU). We do not
         knowingly collect personal data from children. If you believe a child has provided us
         with personal data, contact us and we will delete it promptly.
       </p>
@@ -284,7 +287,7 @@
     </section>
 
     <footer>
-      &copy; 2026 Voximity. All rights reserved.
+      &copy; 2026 voxtown. All rights reserved.
     </footer>
 
   </div>
