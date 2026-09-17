@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — voxtown</title>
+  <title>Privacy Policy — Voxtown</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -91,20 +91,25 @@
 
     <header>
       <h1>Privacy Policy</h1>
-      <p>voxtown &mdash; Last updated: 2026-07-15</p>
+      <p>Voxtown &mdash; Last updated: 2026-08-25</p>
     </header>
 
     <section>
       <h2>Overview</h2>
       <p>
-        voxtown is a music-discovery app that shows you what people are listening to right now.
+        Voxtown is a music-discovery app that shows you what people are listening to right now.
         We built it with a privacy-first mindset: listening data expires automatically and you control what you share.
-        voxtown does not request or store end-user device location.
+        Voxtown does not request or store end-user device location.
       </p>
       <p>
         This policy explains what data we collect, why we collect it, how long we keep it, and what
         rights you have. If you have questions, contact us at
-        <a href="mailto:seanwho88@gmail.com">seanwho88@gmail.com</a>.
+        <a href="mailto:admin@whoriskeyllc.com">admin@whoriskeyllc.com</a>.
+      </p>
+      <p>
+        Voxtown is operated by <strong>Whoriskey LLC</strong>, a Pennsylvania limited liability
+        company, which is the data controller responsible for the personal data described in this
+        policy. "We", "us", and "our" refer to Whoriskey LLC throughout.
       </p>
     </section>
 
@@ -120,18 +125,17 @@
 
       <p><strong>Authentication tokens</strong></p>
       <ul>
-        <li>Spotify OAuth access and refresh tokens, stored in platform secure storage (Android Keystore / iOS Keychain) and never transmitted to our servers in plaintext</li>
         <li>Last.fm username (if you connect Last.fm), stored as a plain identifier</li>
       </ul>
 
       <p><strong>Listening activity</strong></p>
       <ul>
         <li>Song title, artist, and album for the track you are currently playing</li>
-        <li>Source of the track (Spotify, Last.fm scrobble, or manual entry)</li>
+        <li>Source of the track (Last.fm scrobble or manual entry)</li>
         <li>Approximate timestamp when the track was posted</li>
       </ul>
       <div class="highlight-box">
-        Listening records are automatically deleted after <strong>48 hours</strong>. We never store your full listening history.
+        Listening records are automatically deleted after <strong>7 days</strong>. We never store your full listening history.
       </div>
 
       <p><strong>Connections</strong></p>
@@ -147,16 +151,16 @@
 
       <p><strong>Device &amp; diagnostics</strong></p>
       <ul>
-        <li>Crash reports and anonymised usage events (screen views, feature interactions) via standard mobile analytics. These contain no personally identifying information.</li>
+        <li>None. Voxtown ships no analytics SDK and no crash-reporting SDK. We do not collect screen views, feature interactions, device identifiers, or crash data.</li>
       </ul>
     </section>
 
     <section>
       <h2>2. What We Do NOT Collect</h2>
       <ul>
-        <li>Your Spotify or Last.fm password</li>
+        <li>Your Last.fm password</li>
         <li>Device location of any kind (GPS, network, or geohash)</li>
-        <li>Listening history beyond the 48-hour rolling window</li>
+        <li>Listening history beyond the 7-day rolling window</li>
         <li>The individual songs used to unlock a badge (only the final counter is stored)</li>
         <li>Your real name, phone number, or email address (unless you contact us directly)</li>
         <li>Contacts, photos, microphone, or camera data</li>
@@ -167,11 +171,10 @@
     <section>
       <h2>3. How We Use Your Data</h2>
       <ul>
-        <li><strong>Live feed</strong>: Your current track (if shared) is displayed to other voxtown users.</li>
+        <li><strong>Live feed</strong>: Your current track (if shared) is displayed to other Voxtown users.</li>
         <li><strong>Badge system</strong>: Aggregate counters are used to award story badges and surface personalised milestones.</li>
         <li><strong>Connections</strong>: Connection requests are triggered by shared listening moments and routed between the two users involved.</li>
         <li><strong>Business map</strong>: Registered venues and their current track may be displayed on a map view. Venues enter their own address; we do not use your device location.</li>
-        <li><strong>Service improvement</strong>: Anonymised crash data and usage analytics help us fix bugs and prioritise features.</li>
       </ul>
       <p>We do not sell your data. We do not use your listening data for advertising profiling.</p>
     </section>
@@ -179,25 +182,18 @@
     <section>
       <h2>4. Third-Party Services</h2>
 
-      <p><strong>Spotify</strong></p>
-      <p>
-        We use the Spotify Web API under Spotify's Developer Terms of Service to read your
-        currently playing track. Your Spotify credentials are handled entirely by Spotify's
-        OAuth flow. We store only the resulting access/refresh tokens in your device's secure
-        storage. See <a href="https://www.spotify.com/legal/privacy-policy/" target="_blank" rel="noopener">Spotify's Privacy Policy</a>.
-      </p>
-
       <p><strong>Last.fm / AudioScrobbler</strong></p>
       <p>
         If you connect a Last.fm account, we periodically query the Last.fm API for your recent
-        scrobbles. <em>Note: commercial use of the Last.fm API is subject to Audioscrobbler
-        commercial approval, which is pending for voxtown.</em> See
+        scrobbles. <em>Voxtown was granted conditional commercial-use approval for the Last.fm
+        API on 2026-07-29, subject to rate and volume limits we enforce in our own code.</em> See
         <a href="https://www.last.fm/legal/privacy" target="_blank" rel="noopener">Last.fm's Privacy Policy</a>.
       </p>
 
       <p><strong>Firebase / Google</strong></p>
       <p>
-        We use Firebase Authentication and Firestore for user accounts and real-time data sync.
+        We use Firebase Authentication for sign-in only. We do not use Firestore or any other
+        Firebase database; your data is stored in our own PostgreSQL database.
         You can sign in with Google, in which case Google may share your email address and
         display name with us. Google may process data in accordance with their
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
@@ -211,21 +207,15 @@
         it. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.
       </p>
 
-      <p><strong>Crash &amp; analytics</strong></p>
-      <p>
-        We use Firebase Crashlytics for crash reporting. No personally identifying information is
-        included in crash payloads.
-      </p>
     </section>
 
     <section>
       <h2>5. Data Retention</h2>
       <ul>
-        <li><strong>Listening activity</strong>: automatically purged after 48 hours via server-side TTL.</li>
+        <li><strong>Listening activity</strong>: automatically purged after 7 days via server-side TTL.</li>
         <li><strong>Connection messages</strong>: deleted when a connection is removed by either party.</li>
         <li><strong>Account data</strong>: retained until you delete your account.</li>
         <li><strong>Badge counters</strong>: retained as long as your account is active; deleted on account deletion.</li>
-        <li><strong>Crash &amp; analytics data</strong>: retained for up to 90 days in anonymised form.</li>
       </ul>
     </section>
 
@@ -235,8 +225,8 @@
       <ul>
         <li><strong>Access</strong> the personal data we hold about you</li>
         <li><strong>Delete</strong> your account and all associated data (in-app: Settings &rarr; Delete Account)</li>
-        <li><strong>Disconnect</strong> Spotify or Last.fm, which revokes our access to future data from those services</li>
-        <li><strong>Request a copy</strong> of your data by emailing <a href="mailto:seanwho88@gmail.com">seanwho88@gmail.com</a></li>
+        <li><strong>Disconnect</strong> Last.fm, which revokes our access to future data from those services</li>
+        <li><strong>Request a copy</strong> of your data by emailing <a href="mailto:admin@whoriskeyllc.com">admin@whoriskeyllc.com</a></li>
       </ul>
       <p>
         If you are located in the European Economic Area or the United Kingdom, you may also have
@@ -262,7 +252,7 @@
     <section>
       <h2>8. Children</h2>
       <p>
-        voxtown is not directed at children under 13 (or under 16 in the EU). We do not
+        Voxtown is not directed at children under 13 (or under 16 in the EU). We do not
         knowingly collect personal data from children. If you believe a child has provided us
         with personal data, contact us and we will delete it promptly.
       </p>
@@ -281,13 +271,13 @@
       <h2>10. Contact</h2>
       <p>
         Questions, requests, or concerns about your privacy can be sent to:<br />
-        <a href="mailto:seanwho88@gmail.com">seanwho88@gmail.com</a>
+        <a href="mailto:admin@whoriskeyllc.com">admin@whoriskeyllc.com</a>
       </p>
       <p>We aim to respond within 5 business days.</p>
     </section>
 
     <footer>
-      &copy; 2026 voxtown. All rights reserved.
+      &copy; 2026 Whoriskey LLC. All rights reserved.
     </footer>
 
   </div>
